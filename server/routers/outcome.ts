@@ -33,6 +33,15 @@ export const outcomeRouter = router({
       if (error) throw new Error(error.message);
 
       logRaaS("outcome_created", { outcomeId: data.id }, ctx.userId);
+
+      // Auto-trigger agent pipeline (non-blocking)
+      const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://lumina-raas.vercel.app";
+      fetch(`${appUrl}/api/agent/execute`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ outcomeId: data.id }),
+      }).catch((err) => console.error("[Agent trigger error]", err));
+
       return { outcomeId: data.id, status: "pending" };
     }),
 
