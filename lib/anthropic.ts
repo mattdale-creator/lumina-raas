@@ -4,7 +4,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || "",
 });
 
-const MODEL = "claude-opus-4-20250514";
+const MODEL = "claude-3-5-haiku-20241022";
 
 export async function runAgent(
   role: string,
