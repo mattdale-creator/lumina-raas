@@ -126,9 +126,10 @@ export default function DashboardPage() {
           )}
 
           {data.map((outcome) => (
-            <div
+            <Link
               key={outcome.id}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"
+              href={`/dashboard/${outcome.id}`}
+              className="block bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-violet-500/50 transition"
             >
               <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
                 <div>
@@ -173,7 +174,7 @@ export default function DashboardPage() {
                   <span className="text-emerald-400">✓ Verified</span>
                 )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

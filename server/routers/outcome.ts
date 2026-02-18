@@ -57,11 +57,11 @@ export const outcomeRouter = router({
     return data || [];
   }),
 
-  // Get a single outcome by ID
+  // Get a single outcome by ID with agent executions and PRD logs
   getById: protectedProcedure
     .input(z.object({ id: z.string().uuid() }))
     .query(async ({ input, ctx }) => {
-      const { data, error } = await supabaseAdmin
+      const { data: outcome, error } = await supabaseAdmin
         .from("outcomes")
         .select("*")
         .eq("id", input.id)
@@ -69,7 +69,28 @@ export const outcomeRouter = router({
         .single();
 
       if (error) throw new Error(error.message);
-      return data;
+
+      // Get agent executions
+      const { data: agents } = await supabaseAdmin
+        .from("agent_executions")
+        .select("*")
+        .eq("outcome_id", input.id)
+        .order("created_at", { ascending: true });
+
+      // Get PRD instance with full logs
+      const { data: prdInstance } = await supabaseAdmin
+        .from("prd_instances")
+        .select("*")
+        .eq("outcome_id", input.id)
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .single();
+
+      return {
+        ...outcome,
+        agents: agents || [],
+        prdInstance: prdInstance || null,
+      };
     }),
 
   // Verify an outcome (marks as verified, triggers payment if applicable)
