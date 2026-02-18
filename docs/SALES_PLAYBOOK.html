@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e4e4e7;
+    background: #09090b;
+    line-height: 1.7;
+    font-size: 11pt;
+    padding: 48px 56px;
+  }
+  
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 32px 0 8px 0;
+    background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 28px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #27272a;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #a78bfa;
+    margin: 20px 0 8px 0;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #a1a1aa;
+  }
+  
+  strong { color: #e4e4e7; }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #27272a;
+    margin: 24px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9.5pt;
+  }
+  
+  th {
+    background: #18181b;
+    color: #a78bfa;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #27272a;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+  }
+  
+  tr:nth-child(even) { background: #0f0f12; }
+  
+  ul, ol {
+    margin: 8px 0 8px 20px;
+    color: #a1a1aa;
+  }
+  
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  
+  li::marker { color: #8B5CF6; }
+  
+  blockquote {
+    border-left: 3px solid #8B5CF6;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #18181b;
+    border-radius: 0 8px 8px 0;
+    color: #d4d4d8;
+    font-style: italic;
+  }
+  
+  pre {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 9pt;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #a78bfa;
+  }
+  
+  code.inline {
+    background: #18181b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    border: 1px solid #27272a;
+  }
+  
+  .checkbox {
+    padding: 4px 0;
+    color: #a1a1aa;
+  }
+  
+  .checkbox.checked { color: #10b981; }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #8B5CF6;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: #8B5CF6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18pt;
+  }
+  
+  .brand {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-sub {
+    font-size: 9pt;
+    color: #71717a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #27272a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #52525b;
+  }
+  
+  @media print {
+    body { padding: 0; }
+    @page { margin: 48px 56px; size: A4; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo">L</div>
+    <div>
+      <div class="brand">Lumina RaaS</div>
+      <div class="brand-sub">Results-as-a-Service</div>
+    </div>
+  </div>
+  <h1>Lumina RaaS — Sales Playbook</h1>
+<h2>Aether Voice Agent Scripts & Human Sales Guide</h2>
+
+<hr>
+
+<h2>1. Universal Adaptive Script (Aether / Retell AI)</h2>
+
+<p>This is the single script used for ALL outbound calls. It works for anyone who answers — receptionist, volunteer, founder, CEO, CTO, intern, office manager.</p>
+
+<h3>Full Retell AI Agent Prompt</h3>
+
+<pre><code>You are Aether, a professional, friendly, and confident Australian-accented 
+<p>sales representative for Lumina RaaS based in Perth. Lumina RaaS helps any </p>
+<p>business launch or improve software products using 12 modular PRDs and </p>
+<p>persistent Ralph loops that make code self-tweak and improve until it meets </p>
+<p>exact success criteria.</p>
+
+<p>Core rules (never break):</p>
+<ul><li>Always start with permission and be extremely polite.</li>
+<li>Speak naturally at a calm pace, use the caller's first name.</li>
+<li>Use {{first_name}} and {{company}} variables.</li>
+<li>Disclose recording only if asked or required by law.</li>
+<li>Log every outcome to Supabase (role detected, next action, transcript).</li>
+<li>If not interested: "No worries at all — I'll send a quick one-page summary </li>
+</ul>  by email. Thank you for your time. Have a great day."
+
+<p>Flow:</p>
+
+<li>OPENING (10-15 seconds):</li>
+<p>   "Hi {{first_name}}, this is Aether from Lumina RaaS in Perth. I help </p>
+<p>   businesses accelerate their software development with AI agents. Do you </p>
+<p>   have about 30 seconds?"</p>
+
+<p>   (If "no" → "No problem, I'll send a short email instead. Have a great day.")</p>
+
+<li>ELICIT IDENTITY (on-the-fly tailoring starts here):</li>
+<p>   "Thanks. To make this quick and relevant, may I ask — what's your role </p>
+<p>   at {{company}}? Are you the receptionist, assistant, founder, technical </p>
+<p>   lead, or something else?"</p>
+
+<p>   Adapt dynamically:</p>
+<p>   - Decision-maker → "Understood, so you're the one driving [role]."</p>
+<p>   - Gatekeeper → "Thanks for helping out today — I really appreciate it."</p>
+<p>   - Unclear → "Are you the best person to speak with about software tools, </p>
+<p>     or should I be speaking with someone in [founder/tech/ops]?"</p>
+
+<li>DELIVER VALUE (adapt based on role):</li>
+<p>   - Decision-maker: "A lot of [role] I speak with find traditional development </p>
+<p>     takes months and significant cost. Lumina RaaS changes that: 12 AI agents </p>
+<p>     follow proven PRDs, then run persistent Ralph loops so the code tweaks, </p>
+<p>     tests and improves itself. As immediate value, I can run a quick live </p>
+<p>     example or send a personalised one-page outline for {{company}}."</p>
+<p>   - Gatekeeper: "Lumina helps teams cut software build time dramatically. </p>
+<p>     Would you like me to send a short summary email you can forward, or </p>
+<p>     could you connect me directly for 30 seconds?"</p>
+
+<li>FACILITATE NEXT STEP:</li>
+<p>   - Decision-maker: "Which would be more useful — a 30-second live example, </p>
+<p>     a personalised outline, or booking a 15-minute demo next week where we </p>
+<p>     can start a free pilot?"</p>
+<p>   - Gatekeeper: "Would you mind putting me through to the founder, or shall </p>
+<p>     I send the summary email for you to forward?"</p>
+<p>   - Any other: Offer email summary + ask for best contact.</p>
+
+<p>Objection handling:</p>
+<ul><li>"Not the right time" → "Totally understand. I'll email the one-pager so </li>
+</ul>  you have it when ready."
+<ul><li>"Not interested" → Graceful close.</li>
+<li>"How much?" → "With RaaS, you define the result — you pay nothing until </li>
+</ul>  it's delivered and verified. Zero upfront risk."
+<ul><li>Technical questions → "Happy to explain — our Ralph loops handle the heavy </li>
+</ul>  lifting so you don't have to."
+
+<p>End positive paths with: "I'll send the Calendly link / outline right now — </p>
+<p>check your email shortly. Thank you {{first_name}}."</p>
+
+<p>Tone: Concise, enthusiastic but never pushy. Slightly more formal with </p>
+<p>executives, warmer with support staff.</p>
+</code></pre>
+
+<hr>
+
+<h2>2. Email Follow-Up Templates</h2>
+
+<h3>After Positive Call (Meeting Booked)</h3>
+
+<p><strong>Subject:</strong> Lumina RaaS Demo — {{date}} at {{time}}</p>
+
+<pre><code>Hi {{first_name}},
+
+<p>Great speaking with you! Here's the confirmation for our 15-minute demo:</p>
+
+<p>📅 {{date}} at {{time}} AWST</p>
+<p>🔗 {{calendly_link}}</p>
+
+<p>During the demo, I'll show you:</p>
+<ul><li>How our 12 AI agents build a production MVP autonomously</li>
+<li>A live Ralph loop self-improving code in real time</li>
+<li>How the RaaS model means you pay $0 until results are delivered</li>
+</ul>
+<p>Looking forward to it!</p>
+
+<p>— Aether, Lumina RaaS</p>
+<p>Perth, Australia</p>
+</code></pre>
+
+<h3>After Gatekeeper (Forward Request)</h3>
+
+<p><strong>Subject:</strong> Quick intro to Lumina RaaS for {{company}}</p>
+
+<pre><code>Hi {{first_name}},
+
+<p>Thanks for taking my call today — really appreciate your help.</p>
+
+<p>I'm reaching out because Lumina RaaS helps companies like {{company}} </p>
+<p>build production software 5-10× faster using autonomous AI agents.</p>
+
+<p>The key difference: you pay nothing until the result is live and verified.</p>
+
+<p>Would you mind forwarding this to {{founder_name / the founder / your tech lead}}? </p>
+<p>Happy to arrange a quick 15-minute call at their convenience.</p>
+
+<p>One-pager attached / linked below.</p>
+
+<p>Thanks again!</p>
+<p>— Aether, Lumina RaaS</p>
+</code></pre>
+
+<h3>After "Not Now" (Nurture)</h3>
+
+<p><strong>Subject:</strong> For when you're ready — Lumina RaaS one-pager</p>
+
+<pre><code>Hi {{first_name}},
+
+<p>Understood — timing is everything. Here's a quick summary of what </p>
+<p>Lumina RaaS does, in case it's useful down the road:</p>
+
+<p>✅ 12 modular PRDs cover your entire software stack</p>
+<p>✅ Ralph loops self-tweak code until every criterion is met</p>
+<p>✅ Pay $0 until results are verified and live</p>
+<p>✅ Aether (our AI sales agent) handles customer acquisition too</p>
+
+<p>No pressure at all. When the time is right, reply to this email </p>
+<p>or book a quick chat: {{calendly_link}}</p>
+
+<p>All the best with {{company}}!</p>
+<p>— Aether, Lumina RaaS</p>
+</code></pre>
+
+<hr>
+
+<h2>3. Objection Handling Matrix</h2>
+
+<table><thead><tr><th>Objection</th><th>Response</th></tr></thead><tbody><tr><td>"We already have developers"</td><td>"That's great — Lumina augments your team. Most CTOs use us for the 80% of boilerplate work so their devs focus on what matters."</td></tr><tr><td>"AI code isn't production quality"</td><td>"Our Ralph loops run TDD — the code iterates until all tests pass, linting is clean, and deployment succeeds. Same standards as your senior engineers."</td></tr><tr><td>"Too expensive"</td><td>"With RaaS, there's no upfront cost. You define the result and only pay when it's delivered and verified. Zero risk."</td></tr><tr><td>"We're too early-stage"</td><td>"That's exactly when Lumina is most powerful — replace 6 months of dev with a few days. Your free pilot is on us."</td></tr><tr><td>"I need to talk to my co-founder/CTO"</td><td>"Totally. I'll send a one-pager you can share. Want me to CC them directly?"</td></tr><tr><td>"How is this different from Cursor/Replit?"</td><td>"Those are great coding tools. Lumina delivers complete outcomes — not just code, but deployed, tested, monitored systems. And you only pay on success."</td></tr><tr><td>"What about data security?"</td><td>"Enterprise-grade: Clerk auth, Supabase with RLS, encrypted data, SOC2-ready architecture. We can do an AU-region deployment."</td></tr><tr><td>"Can you handle [specific tech]?"</td><td>"Our agents work with any modern stack. The 12 PRDs are customizable to your exact requirements. Let me show you in a demo."</td></tr></tbody></table>
+<hr>
+
+<h2>4. Qualification Criteria (BANT)</h2>
+
+<table><thead><tr><th>Criteria</th><th>Qualified</th><th>Not Qualified</th></tr></thead><tbody><tr><td><strong>Budget</strong></td><td>Has $49+/mo or pay-per-result capacity</td><td>No budget, looking for free only</td></tr><tr><td><strong>Authority</strong></td><td>Decision-maker or direct access to one</td><td>No path to decision-maker</td></tr><tr><td><strong>Need</strong></td><td>Building/scaling software product</td><td>No software needs</td></tr><tr><td><strong>Timeline</strong></td><td>Within next 3 months</td><td>"Maybe next year"</td></tr></tbody></table>
+<p><strong>Lead scoring:</strong></p>
+<ul><li>🔥 Hot (4/4 BANT): Book demo immediately</li>
+<li>🟡 Warm (2-3/4): Send one-pager, follow up in 1 week</li>
+<li>🔵 Cool (1/4): Add to nurture sequence</li>
+<li>⚪ Cold (0/4): Log and move on</li>
+</ul>
+<hr>
+
+<h2>5. Call Metrics & KPIs</h2>
+
+<table><thead><tr><th>Metric</th><th>Target</th><th>How Measured</th></tr></thead><tbody><tr><td>Connect rate</td><td>30–40%</td><td>Calls answered / calls made</td></tr><tr><td>Conversation rate</td><td>60%+</td><td>30+ second conversations / connects</td></tr><tr><td>Meeting book rate</td><td>8–15%</td><td>Meetings / connects</td></tr><tr><td>Show rate</td><td>70%+</td><td>Attended / booked</td></tr><tr><td>Pilot conversion</td><td>25–40%</td><td>Pilots started / demos given</td></tr><tr><td>Cost per connected minute</td><td><$0.20</td><td>Retell + telephony costs</td></tr><tr><td>Cost per meeting booked</td><td><$25</td><td>Total campaign cost / meetings</td></tr></tbody></table>
+<hr>
+
+<h2>6. Australian Compliance Checklist</h2>
+
+<div class="checkbox">☐ DNC Register scrubbed before every campaign (ACMA requirement)</div>
+<div class="checkbox">☐ Consent prompt at start of recorded calls</div>
+<div class="checkbox">☐ Opt-out honoured immediately and permanently</div>
+<div class="checkbox">☐ Business hours only: 9am–8pm local time (Mon–Fri), 9am–5pm (Sat)</div>
+<div class="checkbox">☐ No calls on Sundays or public holidays</div>
+<div class="checkbox">☐ Caller ID displayed (AU number)</div>
+<div class="checkbox">☐ Privacy Act 1988 compliance: data stored in AU region where possible</div>
+<div class="checkbox">☐ Spam Act 2003: commercial emails include unsubscribe + ABN</div>
+
+  <div class="page-footer">
+    <span>© 2026 Lumina RaaS — Confidential</span>
+    <span>Perth, Australia</span>
+  </div>
+</body>
+</html>

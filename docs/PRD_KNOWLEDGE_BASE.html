@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e4e4e7;
+    background: #09090b;
+    line-height: 1.7;
+    font-size: 11pt;
+    padding: 48px 56px;
+  }
+  
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 32px 0 8px 0;
+    background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 28px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #27272a;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #a78bfa;
+    margin: 20px 0 8px 0;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #a1a1aa;
+  }
+  
+  strong { color: #e4e4e7; }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #27272a;
+    margin: 24px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9.5pt;
+  }
+  
+  th {
+    background: #18181b;
+    color: #a78bfa;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #27272a;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+  }
+  
+  tr:nth-child(even) { background: #0f0f12; }
+  
+  ul, ol {
+    margin: 8px 0 8px 20px;
+    color: #a1a1aa;
+  }
+  
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  
+  li::marker { color: #8B5CF6; }
+  
+  blockquote {
+    border-left: 3px solid #8B5CF6;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #18181b;
+    border-radius: 0 8px 8px 0;
+    color: #d4d4d8;
+    font-style: italic;
+  }
+  
+  pre {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 9pt;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #a78bfa;
+  }
+  
+  code.inline {
+    background: #18181b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    border: 1px solid #27272a;
+  }
+  
+  .checkbox {
+    padding: 4px 0;
+    color: #a1a1aa;
+  }
+  
+  .checkbox.checked { color: #10b981; }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #8B5CF6;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: #8B5CF6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18pt;
+  }
+  
+  .brand {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-sub {
+    font-size: 9pt;
+    color: #71717a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #27272a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #52525b;
+  }
+  
+  @media print {
+    body { padding: 0; }
+    @page { margin: 48px 56px; size: A4; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo">L</div>
+    <div>
+      <div class="brand">Lumina RaaS</div>
+      <div class="brand-sub">Results-as-a-Service</div>
+    </div>
+  </div>
+  <h1>Lumina RaaS — Complete PRD Knowledge Base</h1>
+<h2>All 13 Product Requirements Documents</h2>
+
+<hr>
+
+<h2>PRD 1: Marketing & Landing-Page Website</h2>
+
+<h3>Objective</h3>
+<p>Public-facing RaaS marketing site to acquire users, communicate the "pay only for delivered results" value proposition, and capture leads.</p>
+
+<h3>Key Features</h3>
+<ul><li>Responsive landing page with hero, features grid, pricing table, FAQ, and contact form</li>
+<li>Dark theme with violet (#8B5CF6) accent, gradient text effects</li>
+<li>Mobile-first design with hamburger menu</li>
+<li>SEO-optimised metadata and Open Graph tags</li>
+<li>RaaS-specific CTAs: "Start Free Pilot", "Request Early Access"</li>
+</ul>
+<h3>Tech Stack</h3>
+<ul><li>Next.js 15 (App Router, TypeScript)</li>
+<li>Tailwind CSS v4</li>
+<li>Framer Motion animations</li>
+<li>Lucide React icons</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Lighthouse score ≥95 across all categories</li>
+<li>< 2-second load time</li>
+<li>Mobile responsive on all breakpoints</li>
+<li>Contact form with success state</li>
+<li>All sections: Hero → Guarantee → Trusted By → Features → Pricing → FAQ → CTA → Footer</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">app/page.tsx</code> — Full landing page (client component)</li>
+<li><code class="inline">app/layout.tsx</code> — Root layout with Inter font, dark theme</li>
+<li><code class="inline">app/globals.css</code> — Tailwind config with gradient-text utility</li>
+</ul>
+<hr>
+
+<h2>PRD 2: Cloud Infrastructure & Base Hosting Environment</h2>
+
+<h3>Objective</h3>
+<p>Foundational cloud setup with multi-environment support, secrets management, and deployment configuration.</p>
+
+<h3>Key Features</h3>
+<ul><li>Vercel deployment config (Sydney region <code class="inline">syd1</code> for AU latency)</li>
+<li>Docker support for local development consistency</li>
+<li>Environment variable template (.env.example) with all service keys</li>
+<li>Multi-environment: development, staging, production</li>
+</ul>
+<h3>Tech Stack</h3>
+<ul><li>Vercel (frontend + serverless functions)</li>
+<li>Supabase (PostgreSQL + auth + storage + realtime)</li>
+<li>Docker (Alpine Node 20)</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>One-click Vercel deploy from GitHub</li>
+<li>All secrets isolated per environment</li>
+<li>Docker build succeeds: <code class="inline">docker build --no-cache</code></li>
+<li>Zero-downtime deployments</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">vercel.json</code> — Region config, function timeouts</li>
+<li><code class="inline">Dockerfile</code> — Multi-stage build (deps → builder → runner)</li>
+<li><code class="inline">.env.example</code> — Complete environment variable template</li>
+</ul>
+<hr>
+
+<h2>PRD 3: CI/CD Pipelines & DevOps Automation</h2>
+
+<h3>Objective</h3>
+<p>Automated build, test, lint, and deployment workflows with RaaS outcome verification.</p>
+
+<h3>Key Features</h3>
+<ul><li>GitHub Actions workflow triggered on push to main and PRs</li>
+<li>Node.js 20 with npm caching</li>
+<li>Lint → Type check → Build pipeline</li>
+<li>RaaS outcome verification step (confirms build meets success criteria)</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Every code change triggers verified deployment</li>
+<li>< 5 min full pipeline execution</li>
+<li>Type errors and lint issues block merge</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">.github/workflows/ci.yml</code> — Complete CI/CD pipeline</li>
+</ul>
+<hr>
+
+<h2>PRD 4: Database Schema, Models & Data Layer</h2>
+
+<h3>Objective</h3>
+<p>Persistent PostgreSQL storage with all core entities, relationships, indexing, Row Level Security (RLS), and real-time subscriptions.</p>
+
+<h3>Key Features</h3>
+<ul><li><strong>11 tables:</strong> users, outcomes, prd_instances, agent_executions, aether_leads, subscriptions, notification_preferences, raas_metrics, aether_campaign_metrics, audit_logs</li>
+<li>Full foreign key relationships and cascading deletes</li>
+<li>Performance indexes on all query-heavy columns</li>
+<li>RLS policies for multi-tenant isolation</li>
+<li>Supabase Realtime on outcomes, prd_instances, agent_executions, aether_leads</li>
+</ul>
+<h3>Schema Overview</h3>
+
+<table><thead><tr><th>Table</th><th>Purpose</th><th>Key Fields</th></tr></thead><tbody><tr><td><strong>users</strong></td><td>Clerk-synced user profiles</td><td>auth_id, email, role (user/paid_user/admin)</td></tr><tr><td><strong>outcomes</strong></td><td>Core RaaS billing entity</td><td>title, status, success_criteria, amount_cents, verified_at, payment_triggered</td></tr><tr><td><strong>prd_instances</strong></td><td>Tracked PRD executions</td><td>outcome_id, prd_number, status, logs (JSONB)</td></tr><tr><td><strong>agent_executions</strong></td><td>Ralph-loop tracking</td><td>outcome_id, agent_role, iteration_count, completed</td></tr><tr><td><strong>aether_leads</strong></td><td>Sales leads</td><td>campaign, name, email, phone, company, status</td></tr><tr><td><strong>subscriptions</strong></td><td>RaaS retainers</td><td>stripe_subscription_id, tier, status</td></tr><tr><td><strong>notification_preferences</strong></td><td>User notification settings</td><td>email_enabled, in_app_enabled</td></tr><tr><td><strong>raas_metrics</strong></td><td>Outcome performance data</td><td>outcome_id, metric_type, value</td></tr><tr><td><strong>aether_campaign_metrics</strong></td><td>Campaign performance</td><td>leads_contacted, meetings_booked, cost_cents</td></tr><tr><td><strong>audit_logs</strong></td><td>Admin action tracking</td><td>action, performed_by, target_type, details (JSONB)</td></tr></tbody></table>
+<h3>Success Criteria</h3>
+<ul><li>All migrations apply cleanly (<code class="inline">supabase db push</code>)</li>
+<li>RLS prevents unauthorised cross-user access</li>
+<li>Realtime subscriptions work for outcome status updates</li>
+<li>Query latency < 50ms p95 on indexed columns</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">supabase/migrations/001_create_core_schema.sql</code> — Complete migration</li>
+<li><code class="inline">lib/supabase.ts</code> — Client and admin Supabase clients</li>
+</ul>
+<hr>
+
+<h2>PRD 5: User Authentication & Authorization System</h2>
+
+<h3>Objective</h3>
+<p>Secure sign-up, login, sessions, roles, and OAuth with automatic Supabase sync.</p>
+
+<h3>Key Features</h3>
+<ul><li>Clerk integration with ClerkProvider (conditional — works without keys)</li>
+<li>Sign-in and sign-up pages with dark theme styling</li>
+<li>Middleware for route protection (public: <code class="inline">/</code>, <code class="inline">/sign-in</code>, <code class="inline">/sign-up</code>, webhooks)</li>
+<li>Clerk webhook syncs users to Supabase <code class="inline">users</code> table on create/update/delete</li>
+<li>Role-based access: user → paid_user → admin</li>
+<li>Default notification preferences created on signup</li>
+<li>Graceful degradation: app runs without Clerk keys configured</li>
+</ul>
+<h3>RBAC Model</h3>
+
+<table><thead><tr><th>Role</th><th>Access</th></tr></thead><tbody><tr><td><strong>user</strong></td><td>Own outcomes, dashboard, analytics</td></tr><tr><td><strong>paid_user</strong></td><td>+ verified outcome access, payment features</td></tr><tr><td><strong>admin</strong></td><td>+ all users, all outcomes, bulk actions, audit logs</td></tr></tbody></table>
+<h3>Success Criteria</h3>
+<ul><li>Sign-up/login flows complete without errors</li>
+<li>Protected routes redirect unauthenticated users</li>
+<li>New users auto-sync to Supabase with correct role</li>
+<li>Zero security findings</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">middleware.ts</code> — Clerk middleware with security headers</li>
+<li><code class="inline">app/sign-in/[[...sign-in]]/page.tsx</code> — Sign-in page</li>
+<li><code class="inline">app/sign-up/[[...sign-up]]/page.tsx</code> — Sign-up page</li>
+<li><code class="inline">app/api/webhooks/clerk/route.ts</code> — User sync webhook</li>
+<li><code class="inline">app/providers.tsx</code> — Conditional ClerkProvider + tRPC</li>
+</ul>
+<hr>
+
+<h2>PRD 6: Core Product Backend API Services</h2>
+
+<h3>Objective</h3>
+<p>Type-safe tRPC API layer for outcome management, admin operations, and analytics.</p>
+
+<h3>Key Features</h3>
+<ul><li>tRPC v11 with superjson transformer</li>
+<li>Context creation: authenticates via Clerk, resolves Supabase user</li>
+<li>Three procedure levels: public, protected (auth required), admin (admin role)</li>
+<li><strong>Outcome router:</strong> create, getAll, getById, verify, updateStatus</li>
+<li><strong>Admin router:</strong> getAllUsers, getAllOutcomes, bulkVerifyOutcomes, updateUserRole, getAllLeads, getAuditLogs, getStats</li>
+<li><strong>Analytics router:</strong> getMyMetrics, getAllMetrics, getAetherMetrics, getDeliveryStats, exportOutcomes</li>
+</ul>
+<h3>API Endpoints</h3>
+
+<table><thead><tr><th>Router</th><th>Procedure</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>outcome</td><td>create</td><td>mutation</td><td>Create new RaaS outcome</td></tr><tr><td>outcome</td><td>getAll</td><td>query</td><td>User's outcomes (ordered by date)</td></tr><tr><td>outcome</td><td>verify</td><td>mutation</td><td>Mark verified + trigger payment</td></tr><tr><td>admin</td><td>getStats</td><td>query</td><td>Dashboard stats (users, outcomes, revenue)</td></tr><tr><td>admin</td><td>bulkVerifyOutcomes</td><td>mutation</td><td>Verify multiple outcomes at once</td></tr><tr><td>analytics</td><td>getDeliveryStats</td><td>query</td><td>Delivery time and value per outcome</td></tr></tbody></table>
+<h3>Success Criteria</h3>
+<ul><li>All procedures pass integration tests</li>
+<li>< 150ms p95 latency</li>
+<li>Unauthorised users cannot access protected/admin procedures</li>
+<li>Outcome create → verify → payment flow works end-to-end</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">lib/trpc.ts</code> — Server-side tRPC init with auth context</li>
+<li><code class="inline">lib/trpc-client.ts</code> — Client-side React hooks</li>
+<li><code class="inline">server/routers/_app.ts</code> — Root router</li>
+<li><code class="inline">server/routers/outcome.ts</code> — Outcome CRUD</li>
+<li><code class="inline">server/routers/admin.ts</code> — Admin operations</li>
+<li><code class="inline">server/routers/analytics.ts</code> — Analytics queries</li>
+<li><code class="inline">app/api/trpc/[trpc]/route.ts</code> — API handler</li>
+</ul>
+<hr>
+
+<h2>PRD 7: Core Product Frontend Application (User Dashboard)</h2>
+
+<h3>Objective</h3>
+<p>Primary authenticated interface for defining, tracking, and managing RaaS outcomes.</p>
+
+<h3>Key Features</h3>
+<ul><li>Stats cards: Active Outcomes, Verified Results, Total Outcomes</li>
+<li>Outcome list with status badges, progress bars, timestamps</li>
+<li>Create Outcome modal: title, description/success criteria input</li>
+<li>Status colour coding: pending (grey) → in_progress (blue) → delivered (violet) → verified (emerald) → paid (green)</li>
+<li>Quick links to Aether and Analytics</li>
+<li>Empty state with CTA when no outcomes exist</li>
+<li>Shared AppNav component with conditional Clerk UserButton</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Authenticated users see their outcomes in real time</li>
+<li>New outcome creation triggers backend and updates UI instantly</li>
+<li>Mobile responsive, accessible</li>
+<li>All interactions protected by auth</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">app/dashboard/page.tsx</code> — Full dashboard with modal</li>
+<li><code class="inline">app/components/AppNav.tsx</code> — Shared navigation bar</li>
+</ul>
+<hr>
+
+<h2>PRD 8: Payment Processing & Subscription Management</h2>
+
+<h3>Objective</h3>
+<p>Stripe-based billing triggered only on verified outcome delivery (RaaS model).</p>
+
+<h3>Key Features</h3>
+<ul><li>Pay-per-result checkout sessions (AUD currency)</li>
+<li>Stripe webhook handler: processes <code class="inline">checkout.session.completed</code></li>
+<li>Updates outcome status to <code class="inline">paid</code> and triggers email notification</li>
+<li>Customer Portal for subscription management</li>
+<li>Idempotent webhook processing with signature verification</li>
+</ul>
+<h3>Payment Flow</h3>
+<pre><code>Outcome verified → Payment triggered → Stripe Checkout →
+<p>Customer pays → Webhook fires → Outcome marked "paid" →</p>
+<p>Confirmation email sent</p>
+</code></pre>
+
+<h3>Success Criteria</h3>
+<ul><li>End-to-end: create → verify → checkout → payment → database update</li>
+<li>Webhook correctly updates outcomes atomically</li>
+<li>PCI-compliant (Stripe handles card data)</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">lib/stripe.ts</code> — Stripe client, checkout session creation</li>
+<li><code class="inline">app/api/stripe/webhook/route.ts</code> — Webhook handler</li>
+<li><code class="inline">app/api/stripe/create-session/route.ts</code> — Checkout API</li>
+</ul>
+<hr>
+
+<h2>PRD 9: Notification & Communication Services</h2>
+
+<h3>Objective</h3>
+<p>Email notifications for RaaS events using Resend with branded templates.</p>
+
+<h3>Key Features</h3>
+<ul><li>Transactional email templates:</li>
+</ul>  - Outcome Delivered (violet theme, dashboard link)
+<p>  - Payment Confirmed (green theme, amount display)</p>
+<ul><li>User notification preferences (email/in-app toggles)</li>
+<li>Graceful error handling with logging</li>
+<li>HTML email templates with inline styles</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Outcome verification triggers delivery email</li>
+<li>Payment completion triggers confirmation email</li>
+<li>98%+ deliverability</li>
+<li>Templates render correctly across email clients</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">lib/resend.ts</code> — Resend client, email templates, send function</li>
+</ul>
+<hr>
+
+<h2>PRD 10: Analytics, Usage Tracking & Internal Reporting</h2>
+
+<h3>Objective</h3>
+<p>Privacy-first analytics dashboard with outcome metrics, charts, and CSV export.</p>
+
+<h3>Key Features</h3>
+<ul><li>Stats overview: Total, Delivered, Verified, Paid outcomes</li>
+<li>Recharts bar charts: Delivery Time (minutes), Outcome Value (AUD)</li>
+<li>CSV export endpoint for all outcomes</li>
+<li>Dark-themed chart tooltips matching platform design</li>
+<li>Admin-level delivery stats with time calculations</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Dashboard loads with live data</li>
+<li>Charts render correctly (or show empty state)</li>
+<li>CSV export produces accurate data</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">app/analytics/page.tsx</code> — Full analytics dashboard with Recharts</li>
+<li><code class="inline">app/api/analytics/export/route.ts</code> — CSV export endpoint</li>
+</ul>
+<hr>
+
+<h2>PRD 11: Admin Panel & Internal Operational Tools</h2>
+
+<h3>Objective</h3>
+<p>Secure admin interface for managing all users, outcomes, leads, and audit logs.</p>
+
+<h3>Key Features</h3>
+<ul><li>Tabbed interface: All Outcomes, Users, Aether Leads, Audit Log</li>
+<li>Stats dashboard: total users, outcomes, paid, revenue</li>
+<li>Data tables with status badges and role indicators</li>
+<li>Bulk verify functionality</li>
+<li>Access denied page for non-admin users</li>
+<li>Audit log with action, performer, target, timestamp</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Only admin users can access <code class="inline">/admin</code></li>
+<li>All tabs show live data</li>
+<li>Bulk actions update correctly</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">app/admin/page.tsx</code> — Full tabbed admin panel</li>
+</ul>
+<hr>
+
+<h2>PRD 12: Monitoring, Logging, Error Tracking & Security Baseline</h2>
+
+<h3>Objective</h3>
+<p>Production observability, security headers, structured logging, and health monitoring.</p>
+
+<h3>Key Features</h3>
+<ul><li>Security headers in middleware: X-Frame-Options, X-Content-Type-Options, Referrer-Policy, HSTS</li>
+<li>Structured JSON logger with RaaS event context</li>
+<li>Audit logging to Supabase</li>
+<li>Health check endpoint at <code class="inline">/api/monitor/health</code></li>
+<li>Sentry integration ready (add DSN to enable)</li>
+</ul>
+<h3>Security Headers</h3>
+
+<table><thead><tr><th>Header</th><th>Value</th></tr></thead><tbody><tr><td>X-Frame-Options</td><td>DENY</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>Referrer-Policy</td><td>strict-origin-when-cross-origin</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains</td></tr></tbody></table>
+<h3>Success Criteria</h3>
+<ul><li>Health endpoint returns <code class="inline">{ status: "healthy" }</code></li>
+<li>All RaaS actions logged with context</li>
+<li>Security headers pass securityheaders.com scan</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">lib/logger.ts</code> — Structured logger + audit function</li>
+<li><code class="inline">app/api/monitor/health/route.ts</code> — Health check</li>
+<li><code class="inline">middleware.ts</code> — Security headers (integrated with auth)</li>
+</ul>
+<hr>
+
+<h2>PRD 13: Aether — Autonomous Sales Agent</h2>
+
+<h3>Objective</h3>
+<p>Autonomous AI sales agent that finds leads, makes real-time voice calls, qualifies prospects, and books meetings.</p>
+
+<h3>Key Features</h3>
+<ul><li>Campaign launcher UI with configurable parameters</li>
+<li>Target keywords, daily contact limits</li>
+<li>How-it-works visual: Find Leads → Outreach → Voice Calls → Book Meetings</li>
+<li>API route for campaign activation (stubs Apollo.io + Retell AI integration)</li>
+<li>Retell AI voice agent prompt (adaptive, works for any person who answers)</li>
+<li>Campaign metrics stored in Supabase</li>
+<li>Australia-compliant (DNC scrubbing, consent, business hours)</li>
+</ul>
+<h3>Voice Agent Architecture</h3>
+<pre><code>Apollo.io (lead finding) → Personalised outreach (email/LinkedIn) →
+<p>Retell AI (real-time voice calls) → Qualify & book meetings →</p>
+<p>Supabase (CRM logging)</p>
+</code></pre>
+
+<h3>Operational Costs</h3>
+<ul><li>Retell AI: ~$0.07/connected minute + AU telephony ~$0.10/min</li>
+<li>Apollo.io: $49/month (Basic plan)</li>
+<li>Total: ~$0.17–0.20 per connected minute</li>
+</ul>
+<h3>Success Criteria</h3>
+<ul><li>Campaign launches from UI and records to Supabase</li>
+<li>Ready for Apollo/Retell API key activation</li>
+<li>Voice script handles any role (receptionist through CEO)</li>
+</ul>
+<h3>Key Files</h3>
+<ul><li><code class="inline">app/aether/page.tsx</code> — Campaign launcher UI</li>
+<li><code class="inline">app/api/aether/start/route.ts</code> — Campaign API endpoint</li>
+</ul>
+<hr>
+
+<h2>Architecture Summary</h2>
+
+<h3>Tech Stack</h3>
+<table><thead><tr><th>Layer</th><th>Technology</th></tr></thead><tbody><tr><td><strong>Frontend</strong></td><td>Next.js 15 (TypeScript, App Router) + Tailwind CSS</td></tr><tr><td><strong>Backend</strong></td><td>tRPC v11 (serverless functions on Vercel)</td></tr><tr><td><strong>Database</strong></td><td>Supabase (PostgreSQL) with RLS + Realtime</td></tr><tr><td><strong>Auth</strong></td><td>Clerk</td></tr><tr><td><strong>Payments</strong></td><td>Stripe (Checkout + Webhooks)</td></tr><tr><td><strong>Email</strong></td><td>Resend</td></tr><tr><td><strong>Analytics</strong></td><td>Recharts + custom Supabase queries</td></tr><tr><td><strong>Monitoring</strong></td><td>Sentry + structured logging</td></tr><tr><td><strong>Sales</strong></td><td>Apollo.io + Retell AI (via Aether)</td></tr><tr><td><strong>Hosting</strong></td><td>Vercel (Sydney region)</td></tr><tr><td><strong>CI/CD</strong></td><td>GitHub Actions</td></tr></tbody></table>
+<h3>Dependency Graph</h3>
+<pre><code>PRD 1 (Landing) ← standalone
+<p>PRD 2 (Infra)   ← standalone</p>
+<p>PRD 3 (CI/CD)   ← PRD 2</p>
+<p>PRD 4 (Database) ← PRD 2</p>
+<p>PRD 5 (Auth)     ← PRD 4</p>
+<p>PRD 6 (APIs)     ← PRD 4, PRD 5</p>
+<p>PRD 7 (Dashboard) ← PRD 5, PRD 6</p>
+<p>PRD 8 (Payments)  ← PRD 5, PRD 6</p>
+<p>PRD 9 (Notifications) ← PRD 5, PRD 6</p>
+<p>PRD 10 (Analytics) ← PRD 6, PRD 7</p>
+<p>PRD 11 (Admin)    ← PRD 5, PRD 6, PRD 7</p>
+<p>PRD 12 (Monitoring) ← PRD 2, PRD 3</p>
+<p>PRD 13 (Aether)   ← PRD 6</p>
+</code></pre>
+
+<h3>File Count</h3>
+<ul><li><strong>~35 source files</strong> across app/, lib/, server/</li>
+<li><strong>1 SQL migration</strong> (11 tables)</li>
+<li><strong>1 CI/CD workflow</strong></li>
+<li><strong>6 business documents</strong> + financial model</li>
+</ul>
+<hr>
+
+<p><em>Document generated: February 2026 | Lumina RaaS v1.0</em></p>
+
+  <div class="page-footer">
+    <span>© 2026 Lumina RaaS — Confidential</span>
+    <span>Perth, Australia</span>
+  </div>
+</body>
+</html>

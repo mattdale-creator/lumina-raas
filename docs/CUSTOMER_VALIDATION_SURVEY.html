@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e4e4e7;
+    background: #09090b;
+    line-height: 1.7;
+    font-size: 11pt;
+    padding: 48px 56px;
+  }
+  
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 32px 0 8px 0;
+    background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 28px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #27272a;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #a78bfa;
+    margin: 20px 0 8px 0;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #a1a1aa;
+  }
+  
+  strong { color: #e4e4e7; }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #27272a;
+    margin: 24px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9.5pt;
+  }
+  
+  th {
+    background: #18181b;
+    color: #a78bfa;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #27272a;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+  }
+  
+  tr:nth-child(even) { background: #0f0f12; }
+  
+  ul, ol {
+    margin: 8px 0 8px 20px;
+    color: #a1a1aa;
+  }
+  
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  
+  li::marker { color: #8B5CF6; }
+  
+  blockquote {
+    border-left: 3px solid #8B5CF6;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #18181b;
+    border-radius: 0 8px 8px 0;
+    color: #d4d4d8;
+    font-style: italic;
+  }
+  
+  pre {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 9pt;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #a78bfa;
+  }
+  
+  code.inline {
+    background: #18181b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    border: 1px solid #27272a;
+  }
+  
+  .checkbox {
+    padding: 4px 0;
+    color: #a1a1aa;
+  }
+  
+  .checkbox.checked { color: #10b981; }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #8B5CF6;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: #8B5CF6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18pt;
+  }
+  
+  .brand {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-sub {
+    font-size: 9pt;
+    color: #71717a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #27272a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #52525b;
+  }
+  
+  @media print {
+    body { padding: 0; }
+    @page { margin: 48px 56px; size: A4; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo">L</div>
+    <div>
+      <div class="brand">Lumina RaaS</div>
+      <div class="brand-sub">Results-as-a-Service</div>
+    </div>
+  </div>
+  <h1>Lumina RaaS — Customer Validation Survey</h1>
+<h2>Founder Discovery Questions (5–8 minutes)</h2>
+
+<p><strong>Distribution:</strong> Landing page waitlist, LinkedIn, X, YC/Indie Hackers, Product Hunt</p>
+<p><strong>Target:</strong> 100+ responses in first 30 days</p>
+<p><strong>Incentive:</strong> Free pilot outcome for completed surveys</p>
+
+<hr>
+
+<h3>Demographics</h3>
+
+<p><strong>Q1.</strong> What best describes your role?</p>
+<div class="checkbox">☐ Solo founder / Indie hacker</div>
+<div class="checkbox">☐ Technical co-founder / CTO</div>
+<div class="checkbox">☐ Non-technical CEO / Founder</div>
+<div class="checkbox">☐ Product manager</div>
+<div class="checkbox">☐ Agency owner / Freelancer</div>
+<div class="checkbox">☐ Other: ___________</div>
+
+<p><strong>Q2.</strong> What stage is your company at?</p>
+<div class="checkbox">☐ Idea stage (no code yet)</div>
+<div class="checkbox">☐ Pre-seed / Building MVP</div>
+<div class="checkbox">☐ Seed (have early users)</div>
+<div class="checkbox">☐ Series A+ (scaling)</div>
+<div class="checkbox">☐ Agency building for clients</div>
+
+<p><strong>Q3.</strong> Team size?</p>
+<div class="checkbox">☐ Just me</div>
+<div class="checkbox">☐ 2–5</div>
+<div class="checkbox">☐ 6–20</div>
+<div class="checkbox">☐ 21–100</div>
+<div class="checkbox">☐ 100+</div>
+
+<hr>
+
+<h3>Pain Points</h3>
+
+<p><strong>Q4.</strong> On a scale of 1–10, how satisfied are you with the <strong>time and cost</strong> required to build and launch a production-grade MVP today?</p>
+<pre><code>1 (extremely dissatisfied) ——————————————————— 10 (very satisfied)
+</code></pre>
+
+<p><strong>Q5.</strong> What is your <strong>single biggest pain point</strong> in current software development? <em>(Select one)</em></p>
+<div class="checkbox">☐ Timeline delays — takes too long to ship</div>
+<div class="checkbox">☐ Engineering cost — too expensive to hire/contract</div>
+<div class="checkbox">☐ QA / maintenance overhead — bugs and tech debt</div>
+<div class="checkbox">☐ Lack of autonomous iteration — AI tools still need constant babysitting</div>
+<div class="checkbox">☐ DevOps complexity — deployment, monitoring, infrastructure</div>
+<div class="checkbox">☐ Other: ___________</div>
+
+<p><strong>Q6.</strong> How many hours per week do you currently spend on <strong>non-core tasks</strong> (setup, debugging, deployment, refactoring)?</p>
+<div class="checkbox">☐ 0–5 hours</div>
+<div class="checkbox">☐ 5–15 hours</div>
+<div class="checkbox">☐ 15–30 hours</div>
+<div class="checkbox">☐ 30+ hours</div>
+
+<hr>
+
+<h3>Product Interest</h3>
+
+<p><strong>Q7.</strong> How interested are you in a platform that uses <strong>multi-agent orchestration and persistent self-tweaking loops</strong> to handle the entire software lifecycle from requirements to monitoring? <em>(1–10)</em></p>
+<pre><code>1 (not interested) ——————————————————— 10 (very interested)
+</code></pre>
+
+<p><strong>Q8.</strong> Would you be willing to pilot <strong>one modular outcome</strong> (e.g., landing page + auth system) with minimal human oversight?</p>
+<div class="checkbox">☐ Yes, immediately</div>
+<div class="checkbox">☐ Yes, if I could see a demo first</div>
+<div class="checkbox">☐ Maybe, need more information</div>
+<div class="checkbox">☐ No</div>
+
+<p><strong>Q9.</strong> Would you prefer:</p>
+<div class="checkbox">☐ <strong>Bring-your-own-API-key</strong> (you pay compute directly, platform is cheaper)</div>
+<div class="checkbox">☐ <strong>Fully managed</strong> (platform handles everything, usage-based pricing)</div>
+<div class="checkbox">☐ <strong>No preference</strong></div>
+
+<hr>
+
+<h3>Willingness to Pay</h3>
+
+<p><strong>Q10.</strong> What monthly budget would you allocate for a platform that reliably delivered a functional MVP in <strong>days rather than months</strong>?</p>
+<div class="checkbox">☐ $0 — would only use free tier</div>
+<div class="checkbox">☐ $49–$99 /month</div>
+<div class="checkbox">☐ $100–$499 /month</div>
+<div class="checkbox">☐ $500–$2,000 /month</div>
+<div class="checkbox">☐ $2,000+ /month (enterprise)</div>
+<div class="checkbox">☐ Would prefer pay-per-result only</div>
+
+<p><strong>Q11.</strong> What success metrics would convince you to <strong>convert from free to paid</strong>? <em>(Select all that apply)</em></p>
+<div class="checkbox">☐ 80%+ time savings on development</div>
+<div class="checkbox">☐ Specific cost reduction (e.g., 5× cheaper than hiring)</div>
+<div class="checkbox">☐ Quality of output (passes tests, production-ready)</div>
+<div class="checkbox">☐ Speed of delivery (outcome in days, not weeks)</div>
+<div class="checkbox">☐ Integration with my existing tools (Vercel, Supabase, etc.)</div>
+
+<hr>
+
+<h3>Context</h3>
+
+<p><strong>Q12.</strong> Which vertical best describes your <strong>next project</strong>?</p>
+<div class="checkbox">☐ B2B SaaS</div>
+<div class="checkbox">☐ Internal tool / Dashboard</div>
+<div class="checkbox">☐ Marketplace</div>
+<div class="checkbox">☐ Fintech</div>
+<div class="checkbox">☐ Healthtech</div>
+<div class="checkbox">☐ E-commerce</div>
+<div class="checkbox">☐ AI/ML product</div>
+<div class="checkbox">☐ Other: ___________</div>
+
+<p><strong>Q13.</strong> Any additional features or concerns regarding <strong>security, compliance, or integration</strong> with existing tools?</p>
+<pre><code>[Free text response]
+</code></pre>
+
+<p><strong>Q14.</strong> Would you like to be contacted about the <strong>free pilot program</strong>?</p>
+<div class="checkbox">☐ Yes — [Email: ___________]</div>
+<div class="checkbox">☐ No thanks</div>
+
+<hr>
+
+<h3>Analysis Framework</h3>
+
+<p>After collecting responses, score and segment:</p>
+<ul><li><strong>Hot leads:</strong> Q4 ≤ 4 AND Q7 ≥ 7 AND Q8 = "Yes, immediately"</li>
+<li><strong>Warm leads:</strong> Q7 ≥ 5 AND Q10 ≥ "$49–$99"</li>
+<li><strong>Key insights:</strong> Aggregate Q5 for top pain point, Q10 for pricing validation, Q12 for vertical priority</li>
+</ul>
+  <div class="page-footer">
+    <span>© 2026 Lumina RaaS — Confidential</span>
+    <span>Perth, Australia</span>
+  </div>
+</body>
+</html>

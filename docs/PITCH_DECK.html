@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e4e4e7;
+    background: #09090b;
+    line-height: 1.7;
+    font-size: 11pt;
+    padding: 48px 56px;
+  }
+  
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 32px 0 8px 0;
+    background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 28px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #27272a;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #a78bfa;
+    margin: 20px 0 8px 0;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #a1a1aa;
+  }
+  
+  strong { color: #e4e4e7; }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #27272a;
+    margin: 24px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9.5pt;
+  }
+  
+  th {
+    background: #18181b;
+    color: #a78bfa;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #27272a;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+  }
+  
+  tr:nth-child(even) { background: #0f0f12; }
+  
+  ul, ol {
+    margin: 8px 0 8px 20px;
+    color: #a1a1aa;
+  }
+  
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  
+  li::marker { color: #8B5CF6; }
+  
+  blockquote {
+    border-left: 3px solid #8B5CF6;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #18181b;
+    border-radius: 0 8px 8px 0;
+    color: #d4d4d8;
+    font-style: italic;
+  }
+  
+  pre {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 9pt;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #a78bfa;
+  }
+  
+  code.inline {
+    background: #18181b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    border: 1px solid #27272a;
+  }
+  
+  .checkbox {
+    padding: 4px 0;
+    color: #a1a1aa;
+  }
+  
+  .checkbox.checked { color: #10b981; }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #8B5CF6;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: #8B5CF6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18pt;
+  }
+  
+  .brand {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-sub {
+    font-size: 9pt;
+    color: #71717a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #27272a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #52525b;
+  }
+  
+  @media print {
+    body { padding: 0; }
+    @page { margin: 48px 56px; size: A4; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo">L</div>
+    <div>
+      <div class="brand">Lumina RaaS</div>
+      <div class="brand-sub">Results-as-a-Service</div>
+    </div>
+  </div>
+  <h1>Lumina RaaS — Investor Pitch Deck</h1>
+<h2>Results-as-a-Service Platform</h2>
+
+<hr>
+
+<h2>Slide 1: Title</h2>
+<p><strong>Lumina RaaS</strong></p>
+<p>We deliver your complete software business — or you pay nothing.</p>
+
+<p><em>Results-as-a-Service for Rapid Company Launch</em></p>
+
+<hr>
+
+<h2>Slide 2: The Problem</h2>
+<ul><li>Building a production SaaS MVP takes <strong>6–18 months</strong> and <strong>$10k–$50k+</strong></li>
+<li>Solo founders and small teams can't afford dedicated dev, QA, DevOps, and maintenance</li>
+<li>Traditional tools stop at code generation — no one handles the full lifecycle</li>
+<li>Writing specs and reviewing AI outputs has become the new bottleneck</li>
+</ul>
+<p><strong>Every founder we talk to says the same thing:</strong></p>
+<blockquote>"I spent 12 months and $40k just to get a basic version live."</blockquote>
+
+<hr>
+
+<h2>Slide 3: The Solution</h2>
+<p><strong>Lumina RaaS orchestrates 12 specialised AI agents across every software path required to launch a company.</strong></p>
+
+<ul><li>Define your desired outcome (e.g., "production MVP with payments")</li>
+<li>Our agents autonomously build, test, and deploy using persistent Ralph loops</li>
+<li>Code self-tweaks until every success criterion is met</li>
+<li><strong>You pay nothing until the result is live and verified</strong></li>
+</ul>
+<hr>
+
+<h2>Slide 4: How It Works</h2>
+<pre><code>Customer defines outcome → AI agents activate across 12 PRDs →
+<p>Ralph loops self-refine code → Outcome delivered & verified →</p>
+<p>Payment triggered only on success</p>
+</code></pre>
+
+<p><strong>12 Modular PRDs cover:</strong></p>
+<p>Marketing Site → Infrastructure → CI/CD → Database → Auth → APIs →</p>
+<p>Dashboard → Payments → Notifications → Analytics → Admin → Monitoring</p>
+
+<p>Plus <strong>Aether</strong>: Autonomous AI sales agent for customer acquisition</p>
+
+<hr>
+
+<h2>Slide 5: Market Opportunity</h2>
+<ul><li>Global AI agents market: <strong>$7.8B (2025) → $52–139B by 2030</strong> (CAGR 40–46%)</li>
+<li>Multi-agent systems growing fastest at <strong>~48% CAGR</strong></li>
+<li>Gartner predicts <strong>40% of enterprise apps</strong> will embed AI agents by end of 2026</li>
+<li><strong>>2 million</strong> global early-stage startups in 2026</li>
+<li>Addressable segment: <strong>~150,000</strong> with high intent for AI dev tools</li>
+</ul>
+<hr>
+
+<h2>Slide 6: Business Model — Results-as-a-Service</h2>
+<table><thead><tr><th>Tier</th><th>Price</th><th>Description</th></tr></thead><tbody><tr><td><strong>Free Pilot</strong></td><td>$0 until delivered</td><td>One outcome at no cost</td></tr><tr><td><strong>Pay-per-Result</strong></td><td>$2,500–$12,000</td><td>Per verified major outcome</td></tr><tr><td><strong>RaaS Growth</strong></td><td>$499/mo + success fees</td><td>4–6 outcomes/month + Aether</td></tr><tr><td><strong>Enterprise</strong></td><td>$4,999+/mo + 5–8% fee</td><td>Unlimited outcomes + custom agents</td></tr></tbody></table>
+<p><strong>Key: Customer pays ONLY when the result is verified and live.</strong></p>
+
+<hr>
+
+<h2>Slide 7: Competitive Landscape</h2>
+<table><thead><tr><th>Cursor</th><th>Replit Agent</th><th>Devin</th><th><strong>Lumina RaaS</strong></th></tr></thead><tbody><tr><td><strong>Model</strong></td><td>IDE subscription</td><td>Usage credits</td><td>Pay-as-you-go</td><td>Pay-per-result</td></tr><tr><td><strong>Scope</strong></td><td>Code assistance</td><td>Full-stack builds</td><td>End-to-end tasks</td><td>Full company launch</td></tr><tr><td><strong>Autonomy</strong></td><td>Human-driven</td><td>Medium</td><td>High</td><td>Full (Ralph loops)</td></tr><tr><td><strong>Lifecycle</strong></td><td>Code only</td><td>Code + deploy</td><td>Code + debug</td><td>12 PRDs + sales</td></tr><tr><td><strong>Risk</strong></td><td>Customer bears all</td><td>Customer bears all</td><td>Customer bears all</td><td><strong>Zero — no result, no pay</strong></td></tr></tbody></table>
+<hr>
+
+<h2>Slide 8: Traction & Validation</h2>
+<ul><li><strong>Platform built</strong>: 13 PRDs implemented, production-ready</li>
+<li><strong>Aether sales agent</strong>: Autonomous lead finding → voice calls → meeting booking</li>
+<li>Market validation: Explosive demand signals across developer communities</li>
+<li>RaaS model: 2–3× higher conversion than traditional SaaS (2026 benchmarks)</li>
+<li>Cost to acquire customer: <strong>$200–$800</strong> (vs $800–$2,500 industry average)</li>
+</ul>
+<hr>
+
+<h2>Slide 9: Go-to-Market Strategy</h2>
+<p><strong>Phase 1 (Months 1–3):</strong> Closed beta, 500 users from waitlist</p>
+<ul><li>Organic content + Product Hunt launch</li>
+<li>Target: 2,000 signups by month 3</li>
+</ul>
+<p><strong>Phase 2 (Months 4–6):</strong> Public launch, first enterprise pilots</p>
+<ul><li>Target: $150k ARR</li>
+</ul>
+<p><strong>Phase 3 (Months 7–18):</strong> Scale with Aether + partnerships</p>
+<ul><li>Target: $2M ARR by month 18</li>
+<li>Expand to fintech, healthtech, marketplace verticals</li>
+</ul>
+<hr>
+
+<h2>Slide 10: Financial Projections (3-Year)</h2>
+<table><thead><tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead><tbody><tr><td><strong>Revenue</strong></td><td>$620k</td><td>$2.1M</td><td>$4.9M</td></tr><tr><td><strong>Gross Margin</strong></td><td>58%</td><td>66%</td><td>72%</td></tr><tr><td><strong>Operating Profit</strong></td><td>–$120k</td><td>$470k</td><td>$1.8M</td></tr><tr><td><strong>Ending ARR</strong></td><td>$920k</td><td>$2.85M</td><td>$6.4M</td></tr></tbody></table>
+<ul><li>Break-even: Month 14</li>
+<li>Rule of 40: Year 2 (62%), Year 3 (78%)</li>
+<li>Bootstrap-friendly to $1M ARR</li>
+</ul>
+<hr>
+
+<h2>Slide 11: Team & Operations</h2>
+<p><strong>AI-Native, Lean Model:</strong></p>
+<ul><li>Months 1–6: 1–3 humans (founder + ops + fractional engineer)</li>
+<li>All other functions handled by internal Lumina agents</li>
+<li>By Month 12: Max 4–6 humans even at $2M+ ARR</li>
+<li><strong>70–90% reduction in headcount</strong> vs traditional SaaS operations</li>
+</ul>
+<hr>
+
+<h2>Slide 12: The Ask</h2>
+<p><strong>Seeking $1.5–2M Seed Round</strong></p>
+
+<p>Use of funds:</p>
+<ul><li>40% — Marketing & customer acquisition (Aether scaling)</li>
+<li>30% — Platform R&D (agent improvements, new verticals)</li>
+<li>20% — Enterprise sales & partnerships</li>
+<li>10% — Operations & legal</li>
+</ul>
+<p><strong>Target: $4–5M ARR by end of Year 2</strong></p>
+<p><strong>Projected valuation: $25–35M</strong> (6–8× ARR multiple for high-growth AI dev tools)</p>
+
+<hr>
+
+<h2>Slide 13: Contact</h2>
+<p><strong>Lumina RaaS</strong></p>
+<p>Results-as-a-Service</p>
+
+<p>Website: lumina.app</p>
+<p>Email: founders@lumina.app</p>
+<p>Location: Perth, Australia</p>
+
+  <div class="page-footer">
+    <span>© 2026 Lumina RaaS — Confidential</span>
+    <span>Perth, Australia</span>
+  </div>
+</body>
+</html>

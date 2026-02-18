@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e4e4e7;
+    background: #09090b;
+    line-height: 1.7;
+    font-size: 11pt;
+    padding: 48px 56px;
+  }
+  
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 32px 0 8px 0;
+    background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 28px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #27272a;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #a78bfa;
+    margin: 20px 0 8px 0;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #a1a1aa;
+  }
+  
+  strong { color: #e4e4e7; }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #27272a;
+    margin: 24px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9.5pt;
+  }
+  
+  th {
+    background: #18181b;
+    color: #a78bfa;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #27272a;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    padding: 8px 12px;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+  }
+  
+  tr:nth-child(even) { background: #0f0f12; }
+  
+  ul, ol {
+    margin: 8px 0 8px 20px;
+    color: #a1a1aa;
+  }
+  
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+  
+  li::marker { color: #8B5CF6; }
+  
+  blockquote {
+    border-left: 3px solid #8B5CF6;
+    padding: 12px 20px;
+    margin: 16px 0;
+    background: #18181b;
+    border-radius: 0 8px 8px 0;
+    color: #d4d4d8;
+    font-style: italic;
+  }
+  
+  pre {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    overflow-x: auto;
+    font-size: 9pt;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #a78bfa;
+  }
+  
+  code.inline {
+    background: #18181b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    border: 1px solid #27272a;
+  }
+  
+  .checkbox {
+    padding: 4px 0;
+    color: #a1a1aa;
+  }
+  
+  .checkbox.checked { color: #10b981; }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #8B5CF6;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: #8B5CF6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18pt;
+  }
+  
+  .brand {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-sub {
+    font-size: 9pt;
+    color: #71717a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #27272a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #52525b;
+  }
+  
+  @media print {
+    body { padding: 0; }
+    @page { margin: 48px 56px; size: A4; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo">L</div>
+    <div>
+      <div class="brand">Lumina RaaS</div>
+      <div class="brand-sub">Results-as-a-Service</div>
+    </div>
+  </div>
+  <h1>Lumina RaaS — Go-to-Market Execution Plan</h1>
+<h2>Week-by-Week Playbook for First 6 Months</h2>
+
+<hr>
+
+<h2>Phase 1: Foundation & Closed Beta (Weeks 1–8)</h2>
+
+<h3>Week 1–2: Infrastructure & Launch Prep</h3>
+<div class="checkbox">☐ Deploy landing page to Vercel with custom domain (lumina.app)</div>
+<div class="checkbox">☐ Set up Supabase project (AU region), run database migration</div>
+<div class="checkbox">☐ Configure Clerk authentication</div>
+<div class="checkbox">☐ Connect Stripe in test mode</div>
+<div class="checkbox">☐ Set up Resend for transactional emails</div>
+<div class="checkbox">☐ Create social accounts: X (@LuminaRaaS), LinkedIn (company page)</div>
+<div class="checkbox">☐ Set up PostHog or Vercel Analytics on landing page</div>
+<div class="checkbox">☐ Register ABN / business entity (if not done)</div>
+
+<h3>Week 3–4: Content & Waitlist Building</h3>
+<div class="checkbox">☐ Write 3 foundational blog posts:</div>
+<p>  - "What is Results-as-a-Service?"</p>
+<p>  - "How Ralph Loops Make Code Self-Improving"</p>
+<p>  - "12 PRDs: The Complete Software Path for Launching a Company"</p>
+<div class="checkbox">☐ Record 2-minute demo video showing Ralph loop in action</div>
+<div class="checkbox">☐ Create one-pager PDF for Aether email follow-ups</div>
+<div class="checkbox">☐ Launch waitlist on landing page (goal: 200 signups)</div>
+<div class="checkbox">☐ Post daily on X about agentic AI, RaaS model, building in public</div>
+<div class="checkbox">☐ Join and engage in: Indie Hackers, r/SaaS, HN, YC community</div>
+
+<h3>Week 5–6: Closed Beta (50 Users)</h3>
+<div class="checkbox">☐ Invite first 50 waitlist signups to closed beta</div>
+<div class="checkbox">☐ Each gets one free pilot outcome</div>
+<div class="checkbox">☐ Deploy customer validation survey to beta users</div>
+<div class="checkbox">☐ Set up Slack/Discord community for beta feedback</div>
+<div class="checkbox">☐ Track: activation rate, time-to-first-outcome, NPS</div>
+<div class="checkbox">☐ Daily monitoring and bug fixes based on feedback</div>
+
+<h3>Week 7–8: Iterate & Prepare for Public</h3>
+<div class="checkbox">☐ Analyse survey results (target: 100+ responses)</div>
+<div class="checkbox">☐ Implement top 3 requested features/fixes</div>
+<div class="checkbox">☐ Collect 5+ testimonials from beta users</div>
+<div class="checkbox">☐ Prepare Product Hunt launch assets (screenshots, description, video)</div>
+<div class="checkbox">☐ Write Product Hunt launch copy</div>
+<div class="checkbox">☐ Line up 10+ friends/supporters for launch day upvotes</div>
+<div class="checkbox">☐ Switch Stripe to live mode</div>
+
+<hr>
+
+<h2>Phase 2: Public Launch (Weeks 9–12)</h2>
+
+<h3>Week 9: Product Hunt Launch</h3>
+<div class="checkbox">☐ Launch on Product Hunt (target: Top 5 of the day)</div>
+<div class="checkbox">☐ Post announcement on X, LinkedIn, Indie Hackers simultaneously</div>
+<div class="checkbox">☐ Engage with every comment/question on PH within 30 minutes</div>
+<div class="checkbox">☐ Send "We're live!" email to entire waitlist</div>
+<div class="checkbox">☐ Target: 500 new signups in 48 hours</div>
+
+<h3>Week 10: Content Blitz</h3>
+<div class="checkbox">☐ Publish 5 pieces of content across platforms:</div>
+<p>  - Blog post: "How We Built Lumina RaaS in [X] Days Using AI Agents"</p>
+<p>  - X thread: "The RaaS model explained in 10 tweets"</p>
+<p>  - LinkedIn article: "Why SaaS is Dead — Welcome to Results-as-a-Service"</p>
+<p>  - YouTube: Full demo walkthrough (15 min)</p>
+<p>  - Indie Hackers: Revenue/growth update</p>
+<div class="checkbox">☐ Begin SEO optimization (target keywords: "AI agents startup", "autonomous coding", "results as a service")</div>
+
+<h3>Week 11–12: First Paid Conversions</h3>
+<div class="checkbox">☐ Enable paid tiers (Pay-per-Result at $2,500+)</div>
+<div class="checkbox">☐ Launch referral program: $500 compute credit per referred paying customer</div>
+<div class="checkbox">☐ Target: 10 paid outcomes delivered</div>
+<div class="checkbox">☐ Begin tracking all unit economics (CAC, LTV, churn)</div>
+<div class="checkbox">☐ Set up MRR dashboard</div>
+
+<p><strong>Month 3 Goal: 2,000 signups, 50 free pilots, 10 paid outcomes, ~$25k revenue</strong></p>
+
+<hr>
+
+<h2>Phase 3: Growth & Aether Activation (Weeks 13–20)</h2>
+
+<h3>Week 13–14: Aether Sales Agent Goes Live</h3>
+<div class="checkbox">☐ Sign up for Apollo.io (Basic plan $49/mo)</div>
+<div class="checkbox">☐ Sign up for Retell AI, purchase AU phone number</div>
+<div class="checkbox">☐ Configure Aether voice agent with production script</div>
+<div class="checkbox">☐ Test on 50 sample leads manually</div>
+<div class="checkbox">☐ Verify DNC scrubbing and compliance checklist</div>
+<div class="checkbox">☐ Launch first Aether campaign (100 leads/day)</div>
+
+<h3>Week 15–16: Partnership Outreach</h3>
+<div class="checkbox">☐ Contact Vercel partnership team (potential co-marketing)</div>
+<div class="checkbox">☐ Contact Supabase partnership team</div>
+<div class="checkbox">☐ Apply to Stripe partner program</div>
+<div class="checkbox">☐ Reach out to 5 YC companies for pilot programs</div>
+<div class="checkbox">☐ Submit to AI tool directories (There's an AI for That, Futurepedia, etc.)</div>
+
+<h3>Week 17–18: Paid Acquisition Testing</h3>
+<div class="checkbox">☐ Set up Google Ads campaign ($50/day budget)</div>
+<p>  - Keywords: "AI build MVP", "autonomous software development", "AI startup tools"</p>
+<div class="checkbox">☐ Set up LinkedIn Ads ($30/day budget)</div>
+<p>  - Target: CTOs, founders, 1-50 employees, tech industry</p>
+<div class="checkbox">☐ A/B test 3 ad variations</div>
+<div class="checkbox">☐ Measure CAC for each channel; kill underperformers after 2 weeks</div>
+
+<h3>Week 19–20: Content Engine</h3>
+<div class="checkbox">☐ Publish weekly blog posts (SEO-focused)</div>
+<div class="checkbox">☐ Create 3 case studies from paid customers</div>
+<div class="checkbox">☐ Launch YouTube series: "Building [X] with Lumina RaaS" (weekly)</div>
+<div class="checkbox">☐ Guest post on 2 industry blogs</div>
+<div class="checkbox">☐ Start newsletter (target: 1,000 subscribers)</div>
+
+<p><strong>Month 5 Goal: 5,000 signups, 100+ free pilots, 50+ paid outcomes, ~$100k cumulative revenue</strong></p>
+
+<hr>
+
+<h2>Phase 4: Scale & Enterprise (Weeks 21–26)</h2>
+
+<h3>Week 21–22: Enterprise Pilot Program</h3>
+<div class="checkbox">☐ Create Enterprise tier landing page</div>
+<div class="checkbox">☐ Develop SOC2 compliance documentation</div>
+<div class="checkbox">☐ Build custom onboarding flow for enterprise</div>
+<div class="checkbox">☐ Target 3 enterprise pilots ($5,000+ each)</div>
+<div class="checkbox">☐ Assign dedicated success manager (can be AI-assisted)</div>
+
+<h3>Week 23–24: Vertical Expansion</h3>
+<div class="checkbox">☐ Create vertical-specific PRD templates:</div>
+<p>  - Fintech (compliance + payments focus)</p>
+<p>  - Healthtech (HIPAA considerations)</p>
+<p>  - Marketplace (two-sided platform)</p>
+<div class="checkbox">☐ Update landing page with vertical-specific messaging</div>
+<div class="checkbox">☐ Create vertical case studies</div>
+
+<h3>Week 25–26: Fundraise Decision Point</h3>
+<div class="checkbox">☐ Review metrics against financial model</div>
+<div class="checkbox">☐ If at $150k+ ARR: consider continuing bootstrap</div>
+<div class="checkbox">☐ If below targets: prepare seed deck, target $1.5–2M round</div>
+<div class="checkbox">☐ Update pitch deck with real traction numbers</div>
+<div class="checkbox">☐ Identify 20 target investors (AI/SaaS focused VCs, Australian angels)</div>
+
+<p><strong>Month 6 Goal: $150k ARR, 3 enterprise pilots, clear path to $1M ARR</strong></p>
+
+<hr>
+
+<h2>Channel Budget Allocation (Monthly)</h2>
+
+<table><thead><tr><th>Channel</th><th>Month 1–3</th><th>Month 4–6</th><th>Notes</th></tr></thead><tbody><tr><td>Content/SEO</td><td>$0 (sweat equity)</td><td>$500 (tools)</td><td>Highest ROI long-term</td></tr><tr><td>Product Hunt</td><td>$0</td><td>$0</td><td>One-time launch</td></tr><tr><td>Social (X/LinkedIn)</td><td>$0</td><td>$200 (scheduling tools)</td><td>Daily posting</td></tr><tr><td>Google Ads</td><td>$0</td><td>$1,500</td><td>Test after organic baseline</td></tr><tr><td>LinkedIn Ads</td><td>$0</td><td>$900</td><td>Enterprise targeting</td></tr><tr><td>Aether (Apollo + Retell)</td><td>$0</td><td>$200–$500</td><td>Autonomous outreach</td></tr><tr><td>Partnerships</td><td>$0</td><td>$0</td><td>Relationship-based</td></tr><tr><td>Referral Credits</td><td>$0</td><td>$2,500</td><td>5 referrals × $500</td></tr><tr><td><strong>Total</strong></td><td><strong>$0</strong></td><td><strong>$5,800–$6,100</strong></td></tr></tbody></table>
+<hr>
+
+<h2>Key Metrics Dashboard (Track Weekly)</h2>
+
+<table><thead><tr><th>Metric</th><th>Week 4</th><th>Week 8</th><th>Week 12</th><th>Week 20</th><th>Week 26</th></tr></thead><tbody><tr><td>Waitlist/Signups</td><td>200</td><td>500</td><td>2,000</td><td>5,000</td><td>8,000</td></tr><tr><td>Free Pilots Started</td><td>0</td><td>50</td><td>150</td><td>400</td><td>700</td></tr><tr><td>Paid Outcomes</td><td>0</td><td>0</td><td>10</td><td>50</td><td>120</td></tr><tr><td>MRR</td><td>$0</td><td>$0</td><td>$8k</td><td>$25k</td><td>$50k</td></tr><tr><td>ARR</td><td>$0</td><td>$0</td><td>$96k</td><td>$300k</td><td>$600k</td></tr><tr><td>CAC</td><td>—</td><td>—</td><td>$500</td><td>$400</td><td>$335</td></tr><tr><td>Aether Meetings Booked</td><td>0</td><td>0</td><td>0</td><td>50</td><td>150</td></tr><tr><td>NPS</td><td>—</td><td>40+</td><td>50+</td><td>55+</td><td>60+</td></tr></tbody></table>
+<hr>
+
+<h2>Risk Mitigation</h2>
+
+<table><thead><tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td>Low PH launch traction</td><td>Medium</td><td>Medium</td><td>Pre-seed community, multiple launch channels</td></tr><tr><td>High churn after free pilot</td><td>Medium</td><td>High</td><td>Improve onboarding, add success criteria templates</td></tr><tr><td>Aether compliance issue</td><td>Low</td><td>High</td><td>Legal review before launch, DNC scrubbing</td></tr><tr><td>Compute costs exceed projections</td><td>Medium</td><td>Medium</td><td>BYOK option, batch processing, model switching</td></tr><tr><td>Key competitor copies RaaS model</td><td>Low</td><td>Medium</td><td>Speed to market, Aether moat, community lock-in</td></tr></tbody></table>
+<hr>
+
+<h2>Decision Gates</h2>
+
+<ul><li><strong>Week 8:</strong> If <100 waitlist signups → pivot messaging, not product</li>
+<li><strong>Week 12:</strong> If <5 paid outcomes → extend free pilot, add more handholding</li>
+<li><strong>Week 20:</strong> If CAC >$800 → pause paid ads, double down on organic</li>
+<li><strong>Week 26:</strong> If <$100k ARR → consider niche vertical focus or fundraise</li>
+</ul>
+  <div class="page-footer">
+    <span>© 2026 Lumina RaaS — Confidential</span>
+    <span>Perth, Australia</span>
+  </div>
+</body>
+</html>
