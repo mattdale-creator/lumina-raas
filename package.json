@@ -9,9 +9,26 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.37.5",
+    "@sentry/nextjs": "^10.39.0",
+    "@stripe/stripe-js": "^8.7.0",
+    "@supabase/supabase-js": "^2.96.0",
+    "@tanstack/react-query": "^5.90.21",
+    "@trpc/client": "^11.10.0",
+    "@trpc/next": "^11.10.0",
+    "@trpc/react-query": "^11.10.0",
+    "@trpc/server": "^11.10.0",
+    "@upstash/ratelimit": "^2.0.8",
+    "framer-motion": "^12.34.1",
+    "lucide-react": "^0.574.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "recharts": "^3.7.0",
+    "resend": "^6.9.2",
+    "stripe": "^20.3.1",
+    "superjson": "^2.2.6",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
