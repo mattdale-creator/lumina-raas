@@ -39,11 +39,24 @@ export default function DashboardPage() {
 
   const outcomes = trpc.outcome.getAll.useQuery();
   const createOutcome = trpc.outcome.create.useMutation({
-    onSuccess: () => {
+    onSuccess: (data) => {
       outcomes.refetch();
       setShowCreateModal(false);
       setTitle("");
       setDescription("");
+      // Trigger agent pipeline from client (Vercel kills server-side background fetches)
+      fetch("/api/agent/execute", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ outcomeId: data.outcomeId }),
+      })
+        .then(() => {
+          // Refetch after agents complete to show updated status
+          setTimeout(() => outcomes.refetch(), 2000);
+          setTimeout(() => outcomes.refetch(), 10000);
+          setTimeout(() => outcomes.refetch(), 30000);
+        })
+        .catch(console.error);
     },
   });
 
